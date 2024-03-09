@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Teachers</title>
+
+    <style>
+
+        table{
+            border-collapse: collapse;
+            width: 100%;
+            text-align: center;
+
+        }
+        
+        th{
+            padding: 10px;
+            background-color: aqua;
+        }
+        
+        tr, td{
+            padding: 10px;
+        }
+        
+        h2{
+            text-align: center;
+        }
+
+    </style>
+
+</head>
+<body>
+
+<h2>Teachers List</h2>
+
+<table border="1">
+    <tr>
+        <th>ID</th>
+        <th>Name</th>
+        <th>Subject</th>
+        <th>Phone</th>
+        <th>Email</th>
+    </tr>
+
+    {% for y in teacher %}
+
+
+    <tr>
+        <td>{{ y.id }}</td>
+        <td>{{ y.name }}</td>
+        <td>{{ y.subject }}</td>
+        <td>{{ y.phone }}</td>
+        <td>{{ y.email }}</td>
+    </tr>
+
+    {% endfor %}
+
+
+
+</table>
+
+</body>
+</html>

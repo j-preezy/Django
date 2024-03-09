@@ -1,0 +1,55 @@
+COMMANDS
+
+Django
+Create new project: django-admin startproject (project name)
+Run project: python3 manage.py runserver
+Create an app: django-admin startapp (app name)
+
+
+1. Create a new project
+2. Inside project, create an app
+3. In projects setting install the app
+4. Inside the app folder create a urls file 
+5. In the project urls inport include
+6. Create a default url/path and include your app's urls file
+7. In the apps url files within the urls pattern create a default path/urls and specify function. Don't forget to import views.
+8. In the views files, define the function referenced in the app.urls
+
+
+How to create a super user: python3 manage.py createsuperuser
+
+How to run a migration: python3 manage.py migrate
+
+To ensure that an object has been successfully propagated into project:
+    1. Make a migration
+    2. Run a migration
+
+C.R.A.D operation
+Create, Read, Add, Delete
+
+
+HOW TO INCLUDE MEDIA FILES IN DJANGO
+
+1. Create media directory in the project
+2. import os in the settings.py 
+3. Scroll downwards to where there is STATIC_URL then define the variables
+                MEDIA_URL = '/media/'
+                MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
+4. Go to project urls and import 
+    -from django.conf.urls.static import static
+    -from django.conf import settings
+5. After the square bracket add; +static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
+
+
+
+HOW TO START A SERVER
+1. Download XAMPP
+2. Open its location in the terminal 
+3. chmod 755 (file name) xampp-linux-x64-8.2.4-0-installer.run
+4. sudo ./xampp-linux-x64-8.2.4-0-installer.run
+5. To run it: sudo /opt/lampp/lampp start
+
+
+MYSQL
+1. 
+

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Schools</title>
+    <style>
+
+        table{
+            border-collapse: collapse;
+            width: 100%;
+            text-align: center;
+
+        }
+
+        th{
+            padding: 10px;
+            background-color: aqua;
+        }
+        
+        td, tr{
+            padding: 10px;
+        }
+        
+        h2{
+            text-align: center;
+        }
+
+    </style>
+</head>
+<body>
+
+<h2>Schools List</h2>
+
+<table border="1">
+    <tr>
+        <th>ID</th>
+        <th>Name</th>
+        <th>Location</th>
+        <th>Email</th>
+    </tr>
+
+    {% for y in school %}
+
+    <tr>
+        <td>{{ y.id }}</td>
+        <td>{{ y.name }}</td>
+        <td>{{ y.location }}</td>
+        <td>{{ y.email }}</td>
+    </tr>
+
+    {% endfor %}
+
+
+
+</table>
+
+</body>
+</html>
